@@ -1,0 +1,15 @@
+.form-control-button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  color: white;
+  background-color: #46b13d;
+  border: none;
+
+  &:active {
+    border: none;
+  }
+
+  &:hover{
+      cursor: pointer;
+  }
+}

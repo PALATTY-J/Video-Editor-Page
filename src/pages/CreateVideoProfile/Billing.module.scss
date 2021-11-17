@@ -1,0 +1,26 @@
+.billing-table-container {
+  margin: 2rem;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 2rem;
+
+  .heading {
+    font-size: 14px;
+    color: #222222;
+    opacity: 0.5;
+
+    span {
+      margin: 1rem;
+    }
+  }
+
+  &:not(.heading) {
+    color: #222222;
+    font-size: 15px;
+  }
+
+  svg {
+    cursor: pointer;
+  }
+}

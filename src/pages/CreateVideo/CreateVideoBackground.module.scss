@@ -1,0 +1,48 @@
+.video-background-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordian-heading-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  color: #999999;
+  cursor: pointer;
+}
+
+.accordian-content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+  padding: 1rem;
+  div {
+    img {
+      width: 100%;
+    }
+    p {
+      text-align: center;
+      color: #666666;
+    }
+  }
+}
+
+.active-accordian {
+  background-color: #ebf2ff;
+  border-radius: 6px;
+}
+
+.active-accordian-svg {
+  transform: rotate(180deg);
+}
+
+.file-uploader {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: white;
+  height: 75%;
+  border-radius: 6px;
+  cursor: pointer;
+}

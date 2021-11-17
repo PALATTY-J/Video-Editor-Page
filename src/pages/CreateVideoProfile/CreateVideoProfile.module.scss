@@ -1,0 +1,52 @@
+.profile-main-container {
+  padding: 2rem;
+
+  @media only screen and (max-width: 540px) {
+    padding: 1rem;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid black;
+    opacity: 0.1;
+  }
+
+  nav {
+    display: flex;
+
+    a {
+      text-decoration: none;
+      margin: 2rem;
+      color: #999999;
+
+      @media only screen and (max-width: 540px) {
+        margin: 1rem;
+        text-align: center;
+      }
+      
+    }
+  }
+
+  @media only screen and (max-width: 540px) {
+    padding: 1rem;
+  }
+}
+
+.profile-header {
+  display: flex;
+  width: 97%;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  justify-items: center;
+  margin: 1rem;
+
+  p {
+    color: #ee6363;
+    cursor: pointer;
+  }
+}
+
+.active-nav {
+  color: #3860ad !important;
+}

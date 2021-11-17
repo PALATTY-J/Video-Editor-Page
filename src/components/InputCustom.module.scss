@@ -1,0 +1,33 @@
+.form-control {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  input {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #999999;
+    margin-bottom: 1rem;
+
+    &:focus-visible,
+    &:focus {
+      border: 2px solid #5c90f3;
+      outline: none;
+    }
+  }
+
+  label {
+    font-size: 0.9rem;
+    margin: 0.2rem;
+  }
+
+  div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  @media only screen and (max-width: 540px) {
+    width: 80%;
+  }
+}

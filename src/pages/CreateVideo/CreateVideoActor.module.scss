@@ -1,0 +1,13 @@
+.actor-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 1rem;
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    text-align: center;
+  }
+}

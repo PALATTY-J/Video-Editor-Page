@@ -1,0 +1,33 @@
+.login-page {
+  width: 90%;
+  position: absolute;
+  @media only screen and (max-width: 540px) {
+    width: 100%;
+  }
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 10rem;
+  @media only screen and (max-width: 540px) {
+    margin-top: 2rem;
+  }
+}
+
+.login-page-heading {
+  margin: 2rem;
+}
+
+.login-background-svg {
+  float: right;
+  @media only screen and (max-width: 540px) {
+    position: fixed;
+  }
+}
+
+.login-signup-link {
+  color: #3860ad;
+}

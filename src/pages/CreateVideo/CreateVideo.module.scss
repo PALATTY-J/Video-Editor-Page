@@ -1,0 +1,138 @@
+.create-video-main-container {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+
+  hr {
+    color: black;
+    opacity: 0.1;
+    border: none;
+    border-top: 1px solid black;
+  }
+  @media only screen and (max-width: 540px) {
+    margin: 1rem;
+  }
+}
+
+.create-video-header-container {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  @media only screen and (max-width: 540px) {
+    display: inline-block;
+  }
+}
+
+.create-video-heading {
+  display: inline-flex;
+  align-items: center;
+
+  h2 {
+    margin-right: 0.5rem;
+  }
+  svg {
+    cursor: pointer;
+  }
+}
+
+.create-video-button-container {
+  button {
+    margin: 1rem;
+  }
+}
+
+.create-video-content-container {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 2rem;
+  padding: 1rem;
+  margin-top: 1rem;
+
+  @media (max-width: 768px) and (min-width: 541px) {
+    grid-template-columns: 100%;
+  }
+
+  @media only screen and (max-width: 540px) {
+    grid-template-columns: 100%;
+  }
+}
+
+.create-video-content {
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 20px;
+  padding: 1rem;
+
+  div {
+    position: relative;
+    width: 100%;
+    > img {
+      width: 100%;
+      padding: 0.5rem;
+
+      + button {
+        position: absolute;
+        bottom: 15%;
+        left: 45%;
+      }
+    }
+  }
+
+  div {
+    width: 100%;
+    position: relative;
+    > textarea {
+      width: 100%;
+      height: auto;
+      padding: 1rem;
+      border-radius: 20px;
+      outline: none;
+      border: none;
+      resize: none;
+
+      + button {
+        position: absolute;
+        bottom: 15%;
+        left: 3%;
+      }
+    }
+  }
+}
+
+.create-video-content-carousal-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-video-content-carousal-navigation {
+  display: inline-flex;
+  justify-content: flex-start;
+
+  a {
+    text-decoration: none;
+    margin-right: 1.5rem;
+    color: #999999;
+    @media only screen and (max-width: 540px) {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.active-nav {
+  color: #3860ad !important;
+}
+
+.create-video-content-carousal-content {
+  padding: 2rem;
+  @media (max-width: 768px) and (min-width: 541px) {
+    padding: 1rem;
+  }
+  @media only screen and (max-width: 540px) {
+    padding: 1rem;
+  }
+}

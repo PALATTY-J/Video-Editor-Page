@@ -1,0 +1,88 @@
+.plans-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+
+  @media (max-width: 768px) and (min-width: 541px) {
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+  }
+
+  @media only screen and (max-width: 540px) {
+    grid-template-columns: 100%;
+    gap: 2rem;
+  }
+}
+.plans-card {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 24px;
+  padding: 2rem;
+  color: #181059;
+  font-size: 14px;
+
+  @media (max-width: 768px) and (min-width: 541px) {
+    border: 1px solid rgba(24, 16, 89, 0.5);
+  }
+
+  @media only screen and (max-width: 540px) {
+    border: 1px solid rgba(24, 16, 89, 0.5);
+  }
+
+  h2 {
+    color: #222222;
+  }
+  li {
+    list-style: none;
+    margin: 0.5rem;
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    align-items: baseline;
+    svg {
+      margin-right: 0.5rem;
+      path {
+        fill: #181059;
+      }
+    }
+  }
+  button {
+    width: 50%;
+    align-self: center;
+  }
+  h4 {
+    color: #181059;
+    display: inline-block;
+    h1 {
+      display: inline-block;
+    }
+  }
+}
+
+.active-plan {
+  background-color: #46b13d;
+  color: white;
+
+  h2 {
+    color: white;
+  }
+
+  h4 {
+    color: white;
+  }
+
+  svg {
+    path {
+      fill: white !important;
+    }
+  }
+  transform: translateY(-50px);
+  @media (max-width: 768px) and (min-width: 541px) {
+    transform: translateY(0px);
+  }
+  @media only screen and (max-width: 540px) {
+    transform: translateY(0px);
+  }
+}
